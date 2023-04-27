@@ -151,4 +151,16 @@ public class AppTest {
                                                 numberRangeSummarizer
                                                                 .collect("5,4,3,2,1,0,-1,-2,-3,-4,-5")));
         }
+
+        /**
+         * List of Floating Point Numbers
+         * ASSUMPTION: Floating Points are truncated to Integers
+         */
+        @Test
+        public void floatingPointsList() {
+                assertEquals("-5--1, 1-5",
+                                numberRangeSummarizer.summarizeCollection(
+                                                numberRangeSummarizer
+                                                                .collect("5.8,4.4,3.3,2.755,1.87,-1.75,-2.454,-3.55,-4.33,-5.45")));
+        }
 }

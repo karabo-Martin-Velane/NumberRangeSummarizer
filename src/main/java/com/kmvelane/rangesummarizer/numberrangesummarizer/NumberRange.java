@@ -38,18 +38,22 @@ public class NumberRange implements NumberRangeSummarizer {
         Set<Integer> uniqueValues = new HashSet<Integer>();
 
         // Pattern for detecting non-integer inputs
-        Pattern pattern = Pattern.compile("-?\\d+");
+        Pattern pattern = Pattern.compile("-?\\d+\\.?\\d*");
 
         /*
          * Split the numbers at the delimiter
          * ASSUMING the delimiter is always a comma (,)
+         * we Also ASSUME that any floating point number will be truncated to an Integer
          */
         String[] numbers = input.split(",");
         for (String number : numbers) {
             number = number.trim();
-            if (pattern.matcher(number).matches())
-                uniqueValues.add(Integer.valueOf(number));
-            else
+            if (pattern.matcher(number).matches()) {
+                if (number.contains("."))
+                    uniqueValues.add(Float.valueOf(number).intValue());
+                else
+                    uniqueValues.add(Integer.valueOf(number));
+            } else
                 throw new IllegalArgumentException("Only Integer Inputs allowed");
         }
 
