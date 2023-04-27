@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.kmvelane.rangesummarizer.AppTest" time="0.097" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.kmvelane.rangesummarizer.AppTest" time="0.122" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\velan\AppData\Local\Temp\surefire2966149681706678068\surefirebooter-20230427142148337_3.jar C:\Users\velan\AppData\Local\Temp\surefire2966149681706678068 2023-04-27T14-21-47_867-jvmRun1 surefire-20230427142148337_1tmp surefire_0-20230427142148337_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\velan\AppData\Local\Temp\surefire265258833477939588\surefirebooter-20230427174311821_3.jar C:\Users\velan\AppData\Local\Temp\surefire265258833477939588 2023-04-27T17-43-11_263-jvmRun1 surefire-20230427174311821_1tmp surefire_0-20230427174311821_2tmp"/>
     <property name="surefire.test.class.path" value="c:\Users\velan\OneDrive\Documents\Projects\Java\NumberRangeSummarizer\rangesummarizer\target\test-classes;c:\Users\velan\OneDrive\Documents\Projects\Java\NumberRangeSummarizer\rangesummarizer\target\classes;C:\Users\velan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\velan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\velan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\velan\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\velan\.m2\repository\org\junit\vintage\junit-vintage-engine\5.7.0\junit-vintage-engine-5.7.0.jar;C:\Users\velan\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\velan\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\velan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\velan"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\velan\AppData\Local\Temp\surefire2966149681706678068\surefirebooter-20230427142148337_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\velan\AppData\Local\Temp\surefire265258833477939588\surefirebooter-20230427174311821_3.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\apache-maven-3.9.1\bin;C:\Users\velan\anaconda3;C:\Users\velan\anaconda3\Library\mingw-w64\bin;C:\Users\velan\anaconda3\Library\usr\bin;C:\Users\velan\anaconda3\Library\bin;C:\Users\velan\anaconda3\Scripts;C:\Users\velan\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\velan\AppData\Local\Programs\Python\Python311\;C:\Users\velan\AppData\Local\Microsoft\WindowsApps;C:\Users\velan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\apache-maven-3.9.1\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\apache-maven-3.9.1\bin;C:\Users\velan\anaconda3;C:\Users\velan\anaconda3\Library\mingw-w64\bin;C:\Users\velan\anaconda3\Library\usr\bin;C:\Users\velan\anaconda3\Library\bin;C:\Users\velan\anaconda3\Scripts;C:\Users\velan\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\velan\AppData\Local\Programs\Python\Python311\;C:\Users\velan\AppData\Local\Microsoft\WindowsApps;C:\Users\velan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\apache-maven-3.9.1\bin;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.202-b08"/>
@@ -60,14 +60,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="sequentialList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.038"/>
-  <testcase name="sequentialAndNonSequentialIntegers" classname="com.kmvelane.rangesummarizer.AppTest" time="0"/>
-  <testcase name="emptyList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.001"/>
-  <testcase name="unorderedMix" classname="com.kmvelane.rangesummarizer.AppTest" time="0.003"/>
-  <testcase name="orderedLargeListOfSequentialAndNonSequentials" classname="com.kmvelane.rangesummarizer.AppTest" time="0.009"/>
-  <testcase name="unOrderedLargeListOfSequentialAndNonSequentials" classname="com.kmvelane.rangesummarizer.AppTest" time="0.001"/>
-  <testcase name="reverseIntegerList" classname="com.kmvelane.rangesummarizer.AppTest" time="0"/>
+  <testcase name="sequentialList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.046"/>
+  <testcase name="sequentialAndNonSequentialIntegers" classname="com.kmvelane.rangesummarizer.AppTest" time="0.002"/>
+  <testcase name="emptyList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.002"/>
+  <testcase name="unorderedMix" classname="com.kmvelane.rangesummarizer.AppTest" time="0.002"/>
+  <testcase name="orderedLargeListOfSequentialAndNonSequentials" classname="com.kmvelane.rangesummarizer.AppTest" time="0.008"/>
+  <testcase name="unOrderedLargeListOfSequentialAndNonSequentials" classname="com.kmvelane.rangesummarizer.AppTest" time="0.003"/>
+  <testcase name="invalidInput" classname="com.kmvelane.rangesummarizer.AppTest" time="0.004"/>
+  <testcase name="reverseIntegerList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.002"/>
   <testcase name="sequentialIntegers" classname="com.kmvelane.rangesummarizer.AppTest" time="0.002"/>
-  <testcase name="singleItemList" classname="com.kmvelane.rangesummarizer.AppTest" time="0"/>
-  <testcase name="nonSequentialList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.004"/>
+  <testcase name="singleItemList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.001"/>
+  <testcase name="nonSequentialList" classname="com.kmvelane.rangesummarizer.AppTest" time="0.003"/>
 </testsuite>

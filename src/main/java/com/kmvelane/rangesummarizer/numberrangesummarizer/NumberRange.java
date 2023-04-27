@@ -9,6 +9,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 /**
  * @author K. M. VELANE
@@ -25,6 +26,9 @@ public class NumberRange implements NumberRangeSummarizer {
      * @return
      */
     public Collection<Integer> collect(String input) {
+        // Checking for empty input
+        if (input == null || input.length() == 0)
+            return null;
 
         /*
          * Implicit casting of subclass object HashSet in superclass variable Set
@@ -33,9 +37,8 @@ public class NumberRange implements NumberRangeSummarizer {
          */
         Set<Integer> uniqueValues = new HashSet<Integer>();
 
-        // Checking for empty input
-        if (input == null || input.length() == 0)
-            return null;
+        // Pattern for detecting non-integer inputs
+        Pattern pattern = Pattern.compile("-?\\d+");
 
         /*
          * Split the numbers at the delimiter
@@ -43,7 +46,11 @@ public class NumberRange implements NumberRangeSummarizer {
          */
         String[] numbers = input.split(",");
         for (String number : numbers) {
-            uniqueValues.add(Integer.valueOf(number.trim()));
+            number = number.trim();
+            if (pattern.matcher(number).matches())
+                uniqueValues.add(Integer.valueOf(number));
+            else
+                throw new IllegalArgumentException("Only Integer Inputs allowed");
         }
 
         /*

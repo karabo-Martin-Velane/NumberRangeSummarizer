@@ -6,6 +6,8 @@ package com.kmvelane.rangesummarizer;
 // Importing Utilities
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+
+import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.kmvelane.rangesummarizer.numberrangesummarizer.NumberRange;
@@ -61,6 +63,17 @@ public class AppTest {
                                 () -> assertEquals("3-5,12,19,26-29,38",
                                                 numberRangeSummarizer.summarizeCollection(numberRangeSummarizer.collect(
                                                                 "26,3,4,19,38,12,29,3,38,12,5,26,27,19,38,28,12,3,38,12"))));
+        }
+
+        /**
+         * Invalid Input
+         */
+        @Test
+        public void invalidInput() {
+                assertThrows(IllegalArgumentException.class,
+                                () -> numberRangeSummarizer.summarizeCollection(
+                                                numberRangeSummarizer
+                                                                .collect("a,#,-,2,1, ,-1")));
         }
 
         /**
