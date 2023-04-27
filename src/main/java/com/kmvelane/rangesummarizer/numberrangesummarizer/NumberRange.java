@@ -100,7 +100,7 @@ public class NumberRange implements NumberRangeSummarizer {
         for (int index = 1; index < numList.size(); index++) {
             if ((numList.get(index) - numList.get(index - 1)) != 1) {
                 // If the current value does not form a sequence with the predecessor
-                strSummarized.append(",");
+                strSummarized.append(", ");
                 strSummarized.append(numList.get(index));
             } else if ((index != (numList.size() - 1)) && (numList.get(index + 1) - numList.get(index)) != 1) {
                 // If the current value does not forms a sequence with the successor
