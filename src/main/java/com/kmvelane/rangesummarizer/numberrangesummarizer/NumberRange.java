@@ -26,7 +26,7 @@ public class NumberRange implements NumberRangeSummarizer {
      */
     public Collection<Integer> collect(String input) {
 
-        /**
+        /*
          * Implicit casting of subclass object HashSet in superclass variable Set
          * Using a HashSet will allow us to extract only the unique values from the
          * input, This approach is optimized
@@ -37,7 +37,7 @@ public class NumberRange implements NumberRangeSummarizer {
         if (input == null || input.length() == 0)
             return null;
 
-        /**
+        /*
          * Split the numbers at the delimiter
          * ASSUMING the delimiter is always a comma (,)
          */
@@ -46,7 +46,7 @@ public class NumberRange implements NumberRangeSummarizer {
             uniqueValues.add(Integer.valueOf(number.trim()));
         }
 
-        /**
+        /*
          * Converting the set to an arraylist hence we can...
          * ...obtain indexes for the items
          * ...sort the items
@@ -54,7 +54,7 @@ public class NumberRange implements NumberRangeSummarizer {
         ArrayList<Integer> sortedList = new ArrayList<Integer>(uniqueValues);
         Collections.sort(sortedList);
 
-        /**
+        /*
          * Returns the unique & sorted arraylist
          * the arraylist object is implicitly casted onto the
          * collection return variable
@@ -77,7 +77,7 @@ public class NumberRange implements NumberRangeSummarizer {
         // Using a StringBuilder is more optimized to mutable strings
         StringBuilder strSummarized = new StringBuilder();
 
-        /**
+        /*
          * We Explicitly Cast the stored ArrayList object from the collection variable
          * This allows easier access to the stored values
          */
